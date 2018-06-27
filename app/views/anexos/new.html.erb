@@ -1,0 +1,9 @@
+<h1>Avaliação de desenvolvedor</h1>
+
+<p><%= flash[:notice] %></p>
+
+<%= form_with(model: @anexo, local: true) do |form| %>
+  <%= form.label :files %>
+  <%= form.file_field :files, multiple: true %><br>
+  <%= form.submit 'Enviar'%>
+<% end %>

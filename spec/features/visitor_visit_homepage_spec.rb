@@ -5,6 +5,5 @@ feature 'visitor visit homepage' do
     visit root_path
 
     expect(page).to have_css('h1', text: 'Avaliação de desenvolvedor')
-    
   end
 end
